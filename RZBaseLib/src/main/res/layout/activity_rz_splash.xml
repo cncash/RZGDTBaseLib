@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rltSplashBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rltBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAppName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/splash_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.qfxl.view.RoundProgressBar
+        android:id="@+id/skip_view"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        app:rpb_autoStart="false"
+        android:visibility="gone"
+        app:rpb_centerBackgroundColor="#808080"
+        app:rpb_centerTextColor="@android:color/white"
+        app:rpb_centerTextSize="14dp"
+        app:rpb_drawOutsideWrapper="true"
+        app:rpb_outsideWrapperColor="@android:color/white"
+        app:rpb_progressDirection="forward"
+        app:rpb_supportEndToStart="true"
+        app:rpb_sweepStartAngle="-90"
+        app:rpb_sweepStrokeColor="#BDBDBD"
+        app:rpb_sweepStrokeWidth="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/rltSkip"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"/>
+</RelativeLayout>
